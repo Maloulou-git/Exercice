@@ -7,7 +7,7 @@ using namespace std;
 //Nom du fichier constante de type string:
 string const nomFichier = "exo_4a10.txt";
 
-int main8()
+int main10()
 {
     //ouvrir le fichier existant en lecture:
     ifstream monFlux (nomFichier.c_str());
@@ -15,10 +15,12 @@ int main8()
 
     if (monFlux)
     {
-       string mot;
-         //lire le fichier mot par mot:
-         monFlux >> mot;
-         cout<< " premier mot"<<endl;
+        string ligne;
+        //lire le fichier ligne par ligne:
+        while (getline(monFlux, ligne))
+        {
+            cout<<ligne<<endl;
+        }
     }
     else
     {
