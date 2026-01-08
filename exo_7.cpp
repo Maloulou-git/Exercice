@@ -7,7 +7,7 @@ using namespace std;
 //Nom du fichier constante de type string:
 string const nomFichier = "exo_4a10.txt";
 
-int main()
+int main7()
 {
     //ouvrir le fichier existant en lecture:
     ifstream monFlux (nomFichier.c_str());
@@ -15,7 +15,11 @@ int main()
 
     if (monFlux)
     {
-       cout <<"Le fichier a ete ouvert en lecture avec succes !"<<endl;
+       string ligne;
+         //lire le fichier ligne par ligne:
+         getline(monFlux, ligne);
+         cout << "1ere ligne" << endl;
+        
     }
     else
     {
