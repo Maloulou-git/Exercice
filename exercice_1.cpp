@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main()
+int main1()
 {
     //créer et ouvrir un fichier en mode écriture
     ofstream monFlux("exo1.txt");

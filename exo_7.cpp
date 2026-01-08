@@ -5,20 +5,17 @@
 using namespace std;
 
 //Nom du fichier constante de type string:
-string const nomFichier = "exo_3.txt";
+string const nomFichier = "exo_4a10.txt";
 
-int main3()
+int main()
 {
-    //créer et ouvrir un fichier en mode écriture
-    ofstream monFlux(nomFichier.c_str());
-
+    //ouvrir le fichier existant en lecture:
+    ifstream monFlux (nomFichier.c_str());
     //verifier si l'ouverture du fichier a reussi :
 
     if (monFlux)
     {
-        cout<<"Le fichier a ete ouvert avec succes !"<<endl;
-        //les instructions seraient situées ici pour ecrire dans le fichier
-    
+       cout <<"Le fichier a ete ouvert en lecture avec succes !"<<endl;
     }
     else
     {

@@ -7,7 +7,7 @@ using namespace std;
 //Nom du fichier constante de type string:
 string const nomFichier = "exo_4a10.txt";
 
-int main()
+int main6()
 {
     //ouvrir le fichier existant en lecture:
     ifstream monFlux (nomFichier.c_str());
